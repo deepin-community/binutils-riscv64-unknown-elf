@@ -1,0 +1,17 @@
+#
+# The tools use hardlinks from /usr/bin to /usr/lib/riscv64-unknown-elf
+#
+binutils-riscv64-unknown-elf binary: package-contains-hardlink
+#
+# Warnings about lines that can't be wrapped aren't errors, but
+# lintian can't tell that
+#
+binutils-riscv64-unknown-elf binary: groff-message
+#
+# ld.bfd has no manual
+#
+binutils-riscv64-unknown-elf binary: no-manual-page
+#
+# executables all land in usr/lib as designed
+#
+binutils-riscv64-unknown-elf binary: executable-in-usr-lib
