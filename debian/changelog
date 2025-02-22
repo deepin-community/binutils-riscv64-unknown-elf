@@ -1,5 +1,71 @@
-template-repository (1.0-1) unstable; urgency=medium
+binutils-riscv64-unknown-elf (7) unstable; urgency=medium
 
-  * Initial release
+  * New debian binutils source version
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Keith Packard <keithp@keithp.com>  Sat, 28 Sep 2024 11:21:24 -0700
+
+binutils-riscv64-unknown-elf (6) unstable; urgency=medium
+
+  * QA upload.
+  * Convert to source format 3.0 (native)
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+
+ -- Bastian Germann <bage@debian.org>  Sat, 02 Sep 2023 10:46:45 +0200
+
+binutils-riscv64-unknown-elf (5) unstable; urgency=medium
+
+  * Don't try to guess the binutils source tarball directory name.
+    Closes: #1042269.
+
+ -- Keith Packard <keithp@keithp.com>  Wed, 26 Jul 2023 14:31:04 -0700
+
+binutils-riscv64-unknown-elf (4) unstable; urgency=medium
+
+  * Use dpkg-query's source:Upstream-Version instead of cut.
+    Closes: #1022363.
+
+ -- Keith Packard <keithp@keithp.com>  Sun, 23 Oct 2022 15:52:35 -0700
+
+binutils-riscv64-unknown-elf (3) unstable; urgency=medium
+
+  * Switch to using Debian binutils sources
+
+ -- Keith Packard <keithp@keithp.com>  Mon, 08 Aug 2022 20:37:39 -0700
+
+binutils-riscv64-unknown-elf (2.32.2020.04+dfsg-2) unstable; urgency=medium
+
+  * Remove tests. Files needed from GCC are not available.
+    Closes: #955550.
+  * Clean up debian bits
+
+ -- Keith Packard <keithp@keithp.com>  Wed, 15 Apr 2020 23:26:00 -0700
+
+binutils-riscv64-unknown-elf (2.32.2020.04+dfsg-1) unstable; urgency=medium
+
+  * Support SiFive specific cache control instructions.
+  * freedom tools 2020-04
+
+ -- Keith Packard <keithp@keithp.com>  Fri, 10 Apr 2020 14:55:43 -0700
+
+binutils-riscv64-unknown-elf (2.32.2019.08+dfsg-1) unstable; urgency=medium
+
+  * 2.32.2019.08
+  * freedom tools 2019-08
+
+ -- Keith Packard <keithp@keithp.com>  Tue, 01 Oct 2019 18:39:20 -0700
+
+binutils-riscv64-unknown-elf (2.32.2019.08+dfsg~rc1-1) unstable; urgency=medium
+
+  * 2.32.2019.08~rc1-1
+  * freedom tools 2019-08 RC1
+  * removed non-DFSG source files
+
+ -- Keith Packard <keith.packard@sifive.com>  Tue, 13 Aug 2019 22:13:48 -0700
+
+binutils-riscv64-unknown-elf (2.32.1-1) unstable; urgency=medium
+
+  * Initial packaging
+
+ -- Keith Packard <keithp@keithp.com>  Fri, 12 Apr 2019 15:00:55 -0700
